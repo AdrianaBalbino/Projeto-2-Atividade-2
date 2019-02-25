@@ -1,0 +1,80 @@
+
+/*Sintaxe do CSS elemento { atributo: valor; } */
+
+       *{
+       box-sizing: border-box;
+       }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background-color: rgba(169, 169, 169, 0.247); 
+            background-size: 130%;       
+        }
+ 
+                    /* Titulo logo */
+        .header {
+            margin-left: 390px;
+    
+        }
+
+                    /* Coluna direita */
+        .rightcolumn {
+            float: left;
+            background-color:rgb(185, 241, 245);
+            padding-left: 25px;
+            margin-left: 50px;
+            height: 100%;
+            width: 50%;
+        }
+
+                /* Imagem falsa */
+        .fakeimg {
+            background-color:#b4b5af;
+            width: 100%;
+            padding: 10px;
+            margin-left: 10px;
+            height: 50%;
+            }
+
+                            /* Artigo */
+        .card {
+            background-color: #ebddc3;
+            padding: 20px;
+            margin-top: 25px;
+            font-family: serif;
+            font-size: 18px;
+            font-style: italic;     
+            }
+
+                        /*sem flutuadores */
+        .row:after {
+            content: "";
+            display: table;
+            clear:both;
+            }
+
+                        /* Rodapé */
+        #rodape {
+            padding: 20px;
+            text-align:center;
+            background: #b4b5af;
+            margin-top: 10px;
+            width: 100%;
+            height: 50px;
+            z-index: 9999;  
+            }
+
+
+        @media screen {
+            body {
+            font-size: 16px;
+            }
+           }
+
+        @media (max-width: 480px) {
+            body {
+            font-size: 12px;
+            }
+        }
+
